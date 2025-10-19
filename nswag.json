@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json.schemastore.org/nswag",
+  "runtime": "Net80",
+  "defaultVariables": null,
+  "documentGenerator": {
+    "fromDocument": {
+      "json": "",
+      "url": "http://localhost:5000/swagger/v1/swagger.json"
+    }
+  },
+  "codeGenerators": {
+    "openApiToTypeScriptClient": {
+      "className": "ApiClient",
+      "moduleName": "",
+      "namespace": "",
+      "typeScriptVersion": 4.3,
+      "template": "Angular",
+      "promiseType": "Promise",
+      "httpClass": "HttpClient",
+      "useSingletonProvider": true,
+      "injectionTokenType": "InjectionToken",
+      "rxJsVersion": 7.0,
+      "dateTimeType": "Date",
+      "nullValue": "Undefined",
+      "generateClientClasses": true,
+      "generateClientInterfaces": true,
+      "generateOptionalParameters": false,
+      "exportTypes": true,
+      "wrapDtoExceptions": true,
+      "exceptionClass": "ApiException",
+      "clientClassVisibility": "public",
+      "typeStyle": "Class",
+      "classTypes": [],
+      "extendedClasses": [],
+      "extensionCode": "",
+      "generateDefaultValues": true,
+      "generateTypeCheckFunctions": false,
+      "enumNameGenerationMode": "Auto",
+      "enumValueGenerationMode": "Auto",
+      "serviceHost": "",
+      "serviceSchemes": [],
+      "output": "TodoApp.Web/src/api/generated/api-client.ts",
+      "newLineBehavior": "Auto"
+    }
+  }
+}
